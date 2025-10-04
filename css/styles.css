@@ -412,7 +412,11 @@ footer::before {
 
     /* Adjust header for small screens */
     header .container {
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    header {
+        padding: 0.5rem 0;
     }
 
     /* Footer adjustments */
