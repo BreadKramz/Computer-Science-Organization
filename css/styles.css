@@ -141,7 +141,7 @@ section {
 
 /* Hero section specific padding */
 .hero-bg {
-    padding: 3rem 0; /* More compact hero padding for laptop screens */
+    padding: 0; /* Full screen hero */
 }
 
 /* Compact section spacing */
@@ -374,5 +374,60 @@ footer::before {
     #member-modal .bg-black {
         margin: 1rem;
         max-width: calc(100vw - 2rem);
+    }
+
+    /* Adjust section padding for mobile */
+    section {
+        padding: 2rem 0;
+    }
+
+    /* Member cards in single column on small screens */
+    .grid.md\\:grid-cols-2.lg\\:grid-cols-4 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* About section cards */
+    .grid.md\\:grid-cols-3 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Reduce button size */
+    .btn-custom {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust header for small screens */
+    header .container {
+        padding: 0.5rem;
+    }
+
+    /* Footer adjustments */
+    footer .container {
+        padding: 1rem;
+    }
+
+    /* Contact form adjustments */
+    form input, form textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Member modal content */
+    #member-modal .bg-black {
+        padding: 1rem;
     }
 }
