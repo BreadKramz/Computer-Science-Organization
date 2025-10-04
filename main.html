@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Organization - Negros Oriental State University</title>
+    <link rel="icon" type="image/png" href="assets/images/CSO-Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-slate-900 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="assets/images/CSO-Logo.png" alt="CS Org Logo" class="h-10 w-auto">
+                <div class="hidden sm:block">
+                    <div class="text-cyan-400 font-bold text-lg leading-tight">
+                        Computer Science Organization
+                    </div>
+                    <div class="text-green-400 font-mono text-xs -mt-1">
+                        Negros Oriental State University
+                    </div>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-300 transition-colors duration-200">Home</a>
+                <a href="#about" class="hover:text-blue-300 transition-colors duration-200">About</a>
+                <!-- <a href="#events" class="hover:text-blue-300 transition-colors duration-200">Events</a> -->
+                <a href="#members" class="hover:text-blue-300 transition-colors duration-200">Members</a>
+                <a href="#contact" class="hover:text-blue-300 transition-colors duration-200">Contact</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="md:hidden bg-slate-800 px-4 py-2 hidden">
+            <a href="#home" class="block py-2 hover:text-blue-300 transition-colors duration-200">Home</a>
+            <a href="#about" class="block py-2 hover:text-blue-300 transition-colors duration-200">About</a>
+            <!-- <a href="#events" class="block py-2 hover:text-blue-300 transition-colors duration-200">Events</a> -->
+            <a href="#members" class="block py-2 hover:text-blue-300 transition-colors duration-200">Members</a>
+            <a href="#contact" class="block py-2 hover:text-blue-300 transition-colors duration-200">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-32 relative">
+        <div class="hero-content container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <code class="text-green-400 text-sm md:text-lg font-mono bg-black bg-opacity-50 px-4 py-2 rounded border border-green-400">
+                    <span class="typing-effect">print("Welcome to CS Org")</span>
+                </code>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 glow-animation">CS<span class="text-cyan-400">0</span>RG</h1>
+            <p class="text-xl md:text-3xl mb-10 opacity-90 font-mono">Negros Oriental State University<br><span class="text-cyan-400">// Computer Science Organization</span></p>
+            <div class="flex justify-center space-x-4 mb-8">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" style="animation-delay: 0.2s;"></div>
+                <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style="animation-delay: 0.4s;"></div>
+            </div>
+            <a href="#about" class="btn-custom px-8 py-4 rounded-lg font-semibold text-lg">Initialize Learning</a>
+        </div>
+        <!-- Floating code snippets -->
+        <div class="absolute top-10 left-10 opacity-30 animate-bounce">
+            <code class="text-green-400 text-xs">def hello():</code>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-30 animate-bounce" style="animation-delay: 1s;">
+            <code class="text-cyan-400 text-xs">console.log('CS');</code>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-6">About Us</h2>
+            <div class="max-w-3xl mx-auto text-center mb-8">
+                <p class="text-base mb-4 font-mono">
+                    <span class="text-green-400">//</span> The Computer Science Organization at Negros Oriental State University
+                </p>
+                <p class="text-base mb-4">is dedicated to fostering a community of passionate computer science students. We provide opportunities for learning, collaboration, and professional development.</p>
+                <code class="text-cyan-400 text-xs bg-black bg-opacity-50 px-3 py-1 rounded border border-cyan-400">
+                    while(studying): innovate()
+                </code>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 glow-animation">
+                    <div class="text-4xl mb-3 text-center">⚡</div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Algorithm Mastery</h3>
+                    <p class="text-center text-sm">Master data structures, algorithms, and computational thinking through intensive workshops.</p>
+                    <code class="text-green-400 text-xs mt-3 block bg-black bg-opacity-50 p-2 rounded">
+                        def optimize(code): return efficiency
+                    </code>
+                </div>
+                <div class="p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 glow-animation">
+                    <div class="text-4xl mb-3 text-center">🔗</div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Code Collaboration</h3>
+                    <p class="text-center text-sm">Build real-world projects with version control, agile methodologies, and team dynamics.</p>
+                    <code class="text-cyan-400 text-xs mt-3 block bg-black bg-opacity-50 p-2 rounded">
+                        git commit -m "Innovation deployed"
+                    </code>
+                </div>
+                <div class="p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 glow-animation">
+                    <div class="text-4xl mb-3 text-center">🚀</div>
+                    <h3 class="text-lg font-semibold mb-3 text-center">Future Tech</h3>
+                    <p class="text-center text-sm">Explore AI, blockchain, cybersecurity, and emerging technologies with industry experts.</p>
+                    <code class="text-blue-400 text-xs mt-3 block bg-black bg-opacity-50 p-2 rounded">
+                        import future_tech; future_tech.launch()
+                    </code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <!-- <section id="events" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Upcoming Events</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation">
+                    <div class="text-4xl mb-4 text-center">💾</div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">Algorithm Bootcamp</h3>
+                    <p class="mb-4 text-center">Dive deep into sorting algorithms, graph theory, and optimization problems.</p>
+                    <code class="text-green-400 text-xs mb-4 block bg-black bg-opacity-50 p-2 rounded">
+                        O(n log n) = efficiency
+                    </code>
+                    <p class="text-sm font-medium text-center">Date: October 15, 2023</p>
+                </div>
+                <div class="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation">
+                    <div class="text-4xl mb-4 text-center">⚔️</div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">Cybersecurity CTF</h3>
+                    <p class="mb-4 text-center">Capture the Flag competition testing your hacking and defense skills.</p>
+                    <code class="text-red-400 text-xs mb-4 block bg-black bg-opacity-50 p-2 rounded">
+                        flag = decrypt(challenge)
+                    </code>
+                    <p class="text-sm font-medium text-center">Date: November 5, 2023</p>
+                </div>
+                <div class="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation">
+                    <div class="text-4xl mb-4 text-center">🤖</div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">AI & ML Summit</h3>
+                    <p class="mb-4 text-center">Explore machine learning, neural networks, and the future of AI.</p>
+                    <code class="text-cyan-400 text-xs mb-4 block bg-black bg-opacity-50 p-2 rounded">
+                        model.predict(future)
+                    </code>
+                    <p class="text-sm font-medium text-center">Date: November 20, 2023</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Members Section -->
+    <section id="members" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-6">Executive Board 2025-2026</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Executive Board -->
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card">
+                    <img src="assets/images/CSO-Officers/Balasabas.png" alt="Balasabas" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-green-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@balasabas</h3>
+                    <p class="font-medium mb-1 text-sm">President</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-green-400">Leadership & Vision</span>
+                    </div>
+                    <code class="text-cyan-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        commits: ∞
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="balasabas">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card">
+                    <img src="assets/images/CSO-Officers/Teves.png" alt="Teves" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-cyan-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@teves</h3>
+                    <p class="font-medium mb-1 text-sm">Vice President</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-cyan-400">Operations & Strategy</span>
+                    </div>
+                    <code class="text-blue-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        projects: ∞
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="teves">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card">
+                    <img src="assets/images/CSO-Officers/Fundador.png" alt="Fundador" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-blue-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@fundador</h3>
+                    <p class="font-medium mb-1 text-sm">External Secretary</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-blue-400">External Relations</span>
+                    </div>
+                    <code class="text-purple-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        networks: ∞
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="fundador">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card">
+                    <img src="assets/images/CSO-Officers/Millares.png" alt="Millares" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-purple-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@millares</h3>
+                    <p class="font-medium mb-1 text-sm">Internal Secretary</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-purple-400">Internal Affairs</span>
+                    </div>
+                    <code class="text-pink-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        docs: ∞
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="millares">
+                        See More
+                    </button> -->
+                </div>
+
+                <!-- Additional Team Members (Hidden by default) -->
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Cepe.png" alt="Cepe" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-pink-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@cepe</h3>
+                    <p class="font-medium mb-1 text-sm">Treasurer</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-pink-400">Financial Management</span>
+                    </div>
+                    <code class="text-red-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        budget: optimized
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="cepe">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Dinawanao.png" alt="Dinawanao" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-orange-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@dinawanao</h3>
+                    <p class="font-medium mb-1 text-sm">Auditor</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-orange-400">Financial Auditing</span>
+                    </div>
+                    <code class="text-yellow-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        accuracy: 100%
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="dinawanao">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Daño.png" alt="Daño" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-yellow-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@daño</h3>
+                    <p class="font-medium mb-1 text-sm">PRO</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-yellow-400">Public Relations</span>
+                    </div>
+                    <code class="text-green-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        reach: global
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="dano">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Tradio.png" alt="Tradio" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-lime-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@tradio</h3>
+                    <p class="font-medium mb-1 text-sm">PRO</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-lime-400">Public Relations</span>
+                    </div>
+                    <code class="text-cyan-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        engagement: max
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="tradio">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Lomente.png" alt="Lomente" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-indigo-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@lomente</h3>
+                    <p class="font-medium mb-1 text-sm">1st Yr. Representative</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-indigo-400">Student Advocacy</span>
+                    </div>
+                    <code class="text-blue-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        voice: heard
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="lomente">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Arteza.png" alt="Arteza" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-teal-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@arteza</h3>
+                    <p class="font-medium mb-1 text-sm">2nd Yr. Representative</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-teal-400">Student Advocacy</span>
+                    </div>
+                    <code class="text-cyan-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        support: provided
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="arteza">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Nazarino.png" alt="Nazarino" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-violet-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@nazarino</h3>
+                    <p class="font-medium mb-1 text-sm">3rd Yr. Representative</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-violet-400">Student Advocacy</span>
+                    </div>
+                    <code class="text-purple-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        initiatives: launched
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="nazarino">
+                        See More
+                    </button> -->
+                </div>
+                <div class="text-center p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 glow-animation member-card additional-member hidden">
+                    <img src="assets/images/CSO-Officers/Villegas.png" alt="Villegas" class="w-24 h-24 rounded-full mx-auto mb-3 border-4 border-emerald-400 object-cover">
+                    <h3 class="text-base font-semibold mb-1">@villegas</h3>
+                    <p class="font-medium mb-1 text-sm">4th Yr. Representative</p>
+                    <div class="text-xs font-mono">
+                        <span class="text-emerald-400">Senior Advocacy</span>
+                    </div>
+                    <code class="text-teal-400 text-xs mt-1 block bg-black bg-opacity-50 p-1 rounded">
+                        experience: shared
+                    </code>
+                    <!-- <button class="member-details-btn mt-3 text-xs text-cyan-400 hover:text-cyan-300 underline" data-member="villegas">
+                        See More
+                    </button> -->
+                </div>
+            </div>
+
+            <!-- Member Details Modal -->
+            <div id="member-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+                <div class="bg-black bg-opacity-90 p-8 rounded-2xl border border-cyan-400 max-w-md w-full mx-4">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold text-cyan-400" id="modal-title">Member Details</h3>
+                        <button id="close-modal" class="text-cyan-400 hover:text-white text-2xl">&times;</button>
+                    </div>
+                    <div id="modal-content" class="text-center">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Full Team Button -->
+            <div class="text-center mt-12">
+                <button class="btn-custom px-8 py-4 rounded-lg font-semibold text-lg glow-animation">
+                    View Full Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Contact Us</h3>
+                    <div class="text-center mb-4">
+                        <code class="text-green-400 text-xs bg-black bg-opacity-50 px-3 py-1 rounded border border-green-400">
+                            contact@csorg.edu.ph
+                        </code>
+                    </div>
+                    <form class="p-6 rounded-2xl shadow-xl border">
+                        <div class="mb-3">
+                            <label for="name" class="block font-semibold mb-1 font-mono text-xs">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-2 py-2 rounded focus:outline-none transition duration-200 text-sm" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="block font-semibold mb-1 font-mono text-xs">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-2 py-2 rounded focus:outline-none transition duration-200 text-sm" placeholder="your.email@domain.com">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block font-semibold mb-1 font-mono text-xs">Message</label>
+                            <textarea id="message" name="message" rows="3" class="w-full px-2 py-2 rounded focus:outline-none transition duration-200 resize-none text-sm" placeholder="Describe your query..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-2 px-3 rounded font-semibold text-sm transition-all duration-300 glow-animation">Send</button>
+                    </form>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Stay Connected</h3>
+                    <div class="text-center">
+                        <p class="text-sm mb-4 font-mono">
+                            <span class="text-cyan-400">//</span> Subscribe to our newsletter
+                        </p>
+                        <p class="mb-4 opacity-90 text-sm">Get the latest updates and tech insights.</p>
+                        <form class="mb-4">
+                            <div class="flex flex-col gap-2">
+                                <input type="email" placeholder="your.email@domain.com" class="px-3 py-2 rounded text-black focus:outline-none focus:ring-2 focus:ring-cyan-400 transition duration-300 text-sm">
+                                <button type="submit" class="px-4 py-2 rounded font-semibold transition-all duration-300 glow-animation text-sm">Subscribe</button>
+                            </div>
+                        </form>
+                        <code class="text-green-400 text-xs bg-black bg-opacity-50 px-2 py-1 rounded border border-green-400">
+                            newsletter.subscribe()
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Main Footer Content -->
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <!-- Logo & Branding -->
+                <div class="text-center md:text-left">
+                    <div class="flex justify-center md:justify-start items-center mb-4">
+                        <img src="assets/images/CSO-Logo.png" alt="CS Org Logo" class="h-16 w-auto mr-3">
+                        <div>
+                            <div class="text-cyan-400 font-bold text-lg leading-tight">
+                                CSO
+                            </div>
+                            <div class="text-green-400 font-mono text-xs -mt-1">
+                                NORSU
+                            </div>
+                        </div>
+                    </div>
+                    <p class="opacity-90 font-mono text-sm mb-2">&copy; 2025 Computer Science Organization</p>
+                    <code class="text-green-400 text-xs bg-black bg-opacity-50 px-3 py-1 rounded border border-green-400">
+                        version 2.0.0
+                    </code>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center">
+                    <h3 class="text-cyan-400 font-bold text-lg mb-4 font-mono">Connect With Us</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-center space-x-2">
+                            <span class="text-green-400">📞</span>
+                            <span class="text-white font-mono text-sm">0929 648 1803</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <span class="text-cyan-400">✉️</span>
+                            <span class="text-white font-mono text-sm">csonorsumain@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="text-center md:text-right">
+                    <h3 class="text-cyan-400 font-bold text-lg mb-4 font-mono">Follow Us</h3>
+                    <div class="flex justify-center md:justify-end space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61550668835707" target="_blank"
+                           class="bg-cyan-400 bg-opacity-20 hover:bg-opacity-40 p-3 rounded-full transition-all duration-300 hover:scale-110 border border-cyan-400 border-opacity-30 hover:border-opacity-60 glow-animation"
+                           title="Follow us on Facebook">
+                            <svg class="w-6 h-6 text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:csonorsumain@gmail.com"
+                           class="bg-green-400 bg-opacity-20 hover:bg-opacity-40 p-3 rounded-full transition-all duration-300 hover:scale-110 border border-green-400 border-opacity-30 hover:border-opacity-60 glow-animation"
+                           title="Email us">
+                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="mt-8 pt-6 border-t border-cyan-400 border-opacity-30">
+                <div class="text-center">
+                    <code class="text-cyan-400 text-sm bg-black bg-opacity-50 px-4 py-2 rounded border border-cyan-400 border-opacity-50 font-mono">
+                        Built by <span class="glow-text">Kramz</span> | Powered by Innovation
+                    </code>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

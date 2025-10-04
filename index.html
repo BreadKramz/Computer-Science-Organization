@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading - Computer Science Organization</title>
+    <link rel="icon" type="image/png" href="assets/images/CSO-Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-slate-900 flex items-center justify-center z-50 transition-opacity duration-500">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-white mx-auto mb-4"></div>
+            <img src="assets/images/CSO-Logo.png" alt="CSO Logo" class="h-16 w-auto mx-auto mb-4">
+            <p class="text-white text-lg font-semibold">Loading CS Org Website... UNDER PROGRESS!</p>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            window.location.href = 'main.html';
+        }, 3000);
+    </script>
+</body>
+</html>
