@@ -424,6 +424,33 @@ footer::before {
         padding: 1rem;
     }
 
+    footer .grid {
+        gap: 1.5rem;
+    }
+
+    footer img {
+        height: 3rem;
+        margin-right: 0.5rem;
+    }
+
+    footer .text-lg {
+        font-size: 1rem;
+    }
+
+    footer .text-sm {
+        font-size: 0.8rem;
+    }
+
+    footer .space-y-2 > div {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Bottom bar */
+    footer .mt-8 .text-sm {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+
     /* Contact form adjustments */
     form input, form textarea {
         font-size: 0.9rem;
