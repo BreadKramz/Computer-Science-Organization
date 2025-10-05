@@ -8,13 +8,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-900 font-sans">
     <!-- Loading Screen -->
     <div id="loading-screen" class="fixed inset-0 bg-slate-900 flex items-center justify-center z-50 transition-opacity duration-500">
-        <div class="text-center">
-            <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-white mx-auto mb-4"></div>
+        <div class="text-center px-4">
+            <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-cyan-400 mx-auto mb-4"></div>
             <img src="assets/images/CSO-Logo.png" alt="CSO Logo" class="h-16 w-auto mx-auto mb-4">
-            <p class="text-white text-lg font-semibold">Loading CS Org Website... UNDER PROGRESS!</p>
+            <div class="mb-4">
+                <div class="text-cyan-400 font-bold text-lg leading-tight">
+                    Computer Science Organization
+                </div>
+                <div class="text-green-400 font-mono text-sm -mt-1">
+                    Negros Oriental State University
+                </div>
+            </div>
+            <p class="text-white text-sm font-semibold opacity-80">Loading CS Org Website...</p>
+            <code class="text-green-400 text-xs bg-black bg-opacity-50 px-3 py-1 rounded border border-green-400 mt-2 block">
+                Initializing...
+            </code>
         </div>
     </div>
 
